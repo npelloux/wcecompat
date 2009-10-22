@@ -43,7 +43,9 @@ FILE* _wcefdopen( int handle, const char *mode );
 #define _open _wceopen
 #define close _wceclose
 #define read _wceread
+#define _read _wceread
 #define write _wcewrite
+#define _write _wcewrite
 #define lseek _wcelseek
 #define _lseek _wcelseek
 #define unlink _wceunlink

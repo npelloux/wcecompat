@@ -44,3 +44,8 @@ int setbuf (FILE* stream, char* buffer)
 	return 0;
 }
 
+FILE* __cdecl __iob_func()
+{
+	static FILE *standardOutputs[] = { stdin, stdout, stderr };
+	return standardOutputs[0];
+}
